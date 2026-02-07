@@ -1,0 +1,101 @@
+/**
+ * QuoteFlex Admin Styles
+ *
+ * @package QuoteFlex
+ * @since   1.0.0
+ */
+
+/* ========================================
+   Dashboard Statistics Cards
+   ======================================== */
+
+.quoteflex-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.quoteflex-stat-card {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* ========================================
+   Settings Tabs
+   ======================================== */
+
+.quoteflex-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+	margin-bottom: 20px;
+}
+
+/* ========================================
+   Search & Import Page
+   ======================================== */
+
+.quoteflex-search-form {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	margin-bottom: 20px;
+}
+
+.quoteflex-results-header {
+	background: #fff;
+	padding: 15px 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px 4px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quoteflex-results-list {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+	border-radius: 0 0 4px 4px;
+}
+
+/* ========================================
+   General Admin Styles
+   ======================================== */
+
+.quoteflex-empty-state {
+	background: #fff;
+	padding: 40px 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.required {
+	color: #d63638;
+	font-weight: bold;
+}
+
+/* ========================================
+   Responsive Admin
+   ======================================== */
+
+@media (max-width: 782px) {
+	.quoteflex-stats-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.quoteflex-results-header {
+		flex-direction: column;
+		gap: 10px;
+		align-items: stretch;
+	}
+}

@@ -1,0 +1,252 @@
+/**
+ * QuoteFlex Frontend Styles
+ *
+ * @package QuoteFlex
+ * @since   1.0.0
+ */
+
+/* ========================================
+   Base Quote Styles
+   ======================================== */
+
+.quoteflex-quote {
+	margin: 20px 0;
+	max-width: 100%;
+	clear: both;
+}
+
+.quoteflex-text {
+	font-size: 1.2em;
+	line-height: 1.6;
+	font-style: italic;
+	margin: 0 0 15px 0;
+	color: #1d2327;
+}
+
+.quoteflex-author {
+	display: block;
+	font-size: 1em;
+	font-style: normal;
+	color: #646970;
+	margin: 10px 0;
+}
+
+.quoteflex-author-desc {
+	font-size: 0.9em;
+	opacity: 0.8;
+}
+
+.quoteflex-source {
+	display: block;
+	font-size: 0.85em;
+	color: #787c82;
+	font-style: italic;
+	margin-top: 8px;
+}
+
+.quoteflex-refresh {
+	margin-top: 15px;
+	padding: 8px 16px;
+	background: #2271b1;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background 0.3s;
+}
+
+.quoteflex-refresh:hover {
+	background: #135e96;
+}
+
+.quoteflex-refresh:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* ========================================
+   Default Template
+   ======================================== */
+
+.quoteflex-template-default {
+	padding: 20px;
+	background: #f9f9f9;
+	border-left: 4px solid #2271b1;
+	border-radius: 4px;
+}
+
+.quoteflex-template-default .quoteflex-text {
+	margin-bottom: 15px;
+}
+
+/* ========================================
+   Boxed Template
+   ======================================== */
+
+.quoteflex-template-boxed {
+	/* Container styles applied via .quoteflex-box */
+}
+
+.quoteflex-box {
+	position: relative;
+	padding: 30px;
+	background: white;
+	border: 2px solid #2271b1;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quoteflex-quote-icon {
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	font-size: 60px;
+	color: #2271b1;
+	line-height: 1;
+	font-family: Georgia, serif;
+	background: white;
+	padding: 0 10px;
+}
+
+.quoteflex-template-boxed .quoteflex-text {
+	margin-top: 20px;
+}
+
+/* ========================================
+   Card Template
+   ======================================== */
+
+.quoteflex-template-card {
+	/* Container styles applied via .quoteflex-card */
+}
+
+.quoteflex-card {
+	background: white;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	transition: box-shadow 0.3s;
+}
+
+.quoteflex-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quoteflex-card-body {
+	padding: 25px;
+	background: #f6f7f7;
+}
+
+.quoteflex-card-footer {
+	padding: 15px 25px;
+	background: white;
+	border-top: 1px solid #dcdcde;
+}
+
+.quoteflex-template-card .quoteflex-author {
+	margin: 0 0 10px 0;
+}
+
+.quoteflex-template-card .quoteflex-refresh {
+	margin-top: 10px;
+}
+
+/* ========================================
+   Minimal Template
+   ======================================== */
+
+.quoteflex-template-minimal {
+	padding: 10px 0;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.quoteflex-template-minimal .quoteflex-text {
+	font-size: 1em;
+	margin-bottom: 8px;
+}
+
+.quoteflex-template-minimal .quoteflex-author {
+	font-size: 0.9em;
+	margin: 5px 0;
+}
+
+.quoteflex-template-minimal .quoteflex-refresh {
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-size: 12px;
+	background: transparent;
+	color: #2271b1;
+	border: 1px solid #2271b1;
+}
+
+.quoteflex-template-minimal .quoteflex-refresh:hover {
+	background: #2271b1;
+	color: white;
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+.quoteflex-animation-fade {
+	animation: quoteflex-fade-in 0.5s ease-in;
+}
+
+@keyframes quoteflex-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.quoteflex-animation-slide {
+	animation: quoteflex-slide-in 0.5s ease-out;
+}
+
+@keyframes quoteflex-slide-in {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+@media (max-width: 768px) {
+	.quoteflex-text {
+		font-size: 1em;
+	}
+	
+	.quoteflex-box,
+	.quoteflex-card-body {
+		padding: 20px;
+	}
+	
+	.quoteflex-quote-icon {
+		font-size: 40px;
+		top: -10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.quoteflex-template-default,
+	.quoteflex-template-boxed,
+	.quoteflex-template-card {
+		margin: 15px 0;
+	}
+	
+	.quoteflex-refresh {
+		width: 100%;
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,53 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Node modules (if you add build tools later)
+node_modules/
+package-lock.json
+
+# Composer (if you add PHP dependencies later)
+vendor/
+composer.lock
+
+# Build/Distribution
+*.zip
+dist/
+build/
+
+# Documentation (keep the main docs, exclude temp files)
+*SECURITY-REVIEW.md
+*SECURITY-CHECKLIST.md

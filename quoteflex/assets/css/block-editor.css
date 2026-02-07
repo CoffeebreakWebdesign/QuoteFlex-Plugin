@@ -1,0 +1,90 @@
+/**
+ * QuoteFlex Block Editor Styles
+ *
+ * Styles for the Gutenberg block editor.
+ *
+ * @package QuoteFlex
+ * @since   1.0.0
+ */
+
+/* ========================================
+   Block Preview Container
+   ======================================== */
+
+.quoteflex-block-preview {
+	margin: 15px 0;
+	padding: 20px;
+	background: #f0f0f1;
+	border: 1px dashed #8c8f94;
+	border-radius: 4px;
+	min-height: 100px;
+}
+
+.quoteflex-block-preview .components-placeholder {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* ========================================
+   Block in Editor
+   ======================================== */
+
+.wp-block-quoteflex-quote-display {
+	margin: 20px 0;
+}
+
+/* Make block preview look good in editor */
+.quoteflex-block-preview .quoteflex-quote {
+	margin: 0;
+}
+
+/* ========================================
+   Inspector Controls Styling
+   ======================================== */
+
+.components-panel__body .components-base-control__label {
+	font-weight: 600;
+}
+
+/* Add spacing between controls */
+.components-panel__body .components-base-control + .components-base-control {
+	margin-top: 16px;
+}
+
+/* ========================================
+   Block Placeholder
+   ======================================== */
+
+.quoteflex-block-placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	text-align: center;
+	background: #fff;
+	border: 1px dashed #1e1e1e;
+	border-radius: 2px;
+}
+
+.quoteflex-block-placeholder .dashicon {
+	width: 48px;
+	height: 48px;
+	font-size: 48px;
+	color: #1e1e1e;
+	margin-bottom: 16px;
+}
+
+.quoteflex-block-placeholder h3 {
+	margin: 0 0 8px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1e1e1e;
+}
+
+.quoteflex-block-placeholder p {
+	margin: 0;
+	font-size: 13px;
+	color: #757575;
+}
